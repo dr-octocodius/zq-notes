@@ -7,6 +7,11 @@ import { ion } from "starlight-ion-theme";
 
 // https://astro.build/config
 export default defineConfig({
+  vite: {
+    server: {
+      allowedHosts: ['zqnotes.gherlo.dev']
+    },
+  },
   integrations: [
     starlight({
       title: "ZQ Notes",
