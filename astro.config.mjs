@@ -2,12 +2,15 @@
 
 import starlight from "@astrojs/starlight";
 import { defineConfig } from "astro/config";
+import { ion } from "starlight-ion-theme";
+
 
 // https://astro.build/config
 export default defineConfig({
   integrations: [
     starlight({
-      title: "My Docs",
+      title: "ZQ Notes",
+      plugins: [ion()],
       social: [
         {
           icon: "github",
